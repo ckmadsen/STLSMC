@@ -37,7 +37,7 @@ public class Main {
 					double satisfyingPercent = computeSatisfyingPercent(traceFiles, property);
 					System.out.println((satisfyingPercent * 100) + "% of traces satisfy the property.");
 					System.out.println("The true satisfying percentage is within "
-							+ computeError(satisfyingPercent, traceFiles.size())
+							+ (computeError(satisfyingPercent, traceFiles.size()) * 100)
 							+ "% of this value with 95% confidence.");
 				}
 			}
